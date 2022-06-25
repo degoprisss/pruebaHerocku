@@ -1,7 +1,7 @@
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 import { Timestamps } from "../inheritance";
 
-@Entity('user_gootmet')
+@Entity('user_progipix')
 export class UsersCars extends Timestamps {
 
     @PrimaryGeneratedColumn('uuid')
