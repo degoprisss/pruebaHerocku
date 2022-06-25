@@ -12,7 +12,7 @@ export const databaseProvider = TypeOrmModule.forRootAsync({
         return {
             type: 'postgres',
             host: configService.get<string>('Host'),
-            port: configService.get<number>('Port'),
+            port: configService.get<number>('Portdb'),
             username: configService.get<string>('User'),
             password: configService.get<string>('Password'),
             database: configService.get<string>('Database'),
