@@ -18,12 +18,12 @@ export const databaseProvider = TypeOrmModule.forRootAsync({
             database: configService.get<string>('Database'),
             entities: listEntities,
             synchronize: false,
-            // url: configService.get<string>('DATABASE_UR'),
-            // extra: {
-            //     ssl: {
-            //       rejectUnauthorized: false,
-            //     },
-            // },
+            url: configService.get<string>('DATABASE_UR'),
+            extra: {
+                ssl: {
+                  rejectUnauthorized: false,
+                },
+            },
             logging: true,
             // url: configService.get<string>('DATABASE_UR'),
             cache: {
